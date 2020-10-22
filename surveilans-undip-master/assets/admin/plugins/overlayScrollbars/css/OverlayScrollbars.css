@@ -20,8 +20,8 @@ html.os-html > .os-host {
     display: block;
     overflow: hidden;
     box-sizing: border-box;
-    height: 100% !important;
-    width: 100% !important;
+    height: 100% ;
+    width: 100% ;
     min-width: 100% !important;
     min-height: 100% !important;
     margin: 0 !important;
