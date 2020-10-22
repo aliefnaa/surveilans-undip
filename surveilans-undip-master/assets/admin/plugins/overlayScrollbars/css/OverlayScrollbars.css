@@ -20,12 +20,12 @@ html.os-html > .os-host {
     display: block;
     overflow: hidden;
     box-sizing: border-box;
-    height: 100% ;
-    width: 100% ;
-    min-width: 100% !important;
-    min-height: 100% !important;
-    margin: 0 !important;
-    position: absolute !important; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
 }
 html.os-html > .os-host > .os-padding {
     position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
@@ -37,7 +37,7 @@ body.os-dragging * {
 .os-host,
 .os-host-textarea {
     position: relative;
-    overflow: visible !important;   
+    overflow: visible;   
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -55,13 +55,13 @@ body.os-dragging * {
             align-items: flex-start;
 }
 .os-host-flexbox {
-    overflow: hidden !important;
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 .os-host-flexbox > .os-size-auto-observer {
-    height: inherit !important;
+    height: inherit;
 }
 .os-host-flexbox > .os-content-glue {
     -webkit-box-flex: 1;
