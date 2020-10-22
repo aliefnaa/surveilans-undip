@@ -37,7 +37,7 @@ body.os-dragging * {
 .os-host,
 .os-host-textarea {
     position: relative;
-    overflow: visible !important;
+    overflow: visible !important;   
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -494,6 +494,7 @@ html.os-html > .os-host > .os-scrollbar {
 .os-host-overflow {
     overflow: hidden !important;
 }
+
 
 /*
 THEMES:
