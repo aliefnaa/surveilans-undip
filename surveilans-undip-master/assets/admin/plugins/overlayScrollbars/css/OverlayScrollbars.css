@@ -17,8 +17,8 @@ OVERLAY SCROLLBARS CORE:
 
 html.os-html,
 html.os-html > .os-host {
-display: block;
-overflow: hidden;
+    display: block;
+    overflow: hidden;
     box-sizing: border-box;
     height: 100% !important;
     width: 100% !important;
