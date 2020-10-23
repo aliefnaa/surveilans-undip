@@ -48,7 +48,7 @@ INSERT INTO admin (id_user, username, password) VALUES
 --
 
 CREATE TABLE apd (
-  id_instansi int(11) NOT NULL,
+  'id_instansi' int(11) NOT NULL,
   nama varchar(255) NOT NULL,
   jenis varchar(255) NOT NULL,
   alamat varchar(255) NOT NULL,
