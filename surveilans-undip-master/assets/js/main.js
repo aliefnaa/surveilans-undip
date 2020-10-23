@@ -8,16 +8,16 @@
   "use strict";
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  $(document).on("click", ".nav-menu a, .mobile-nav a, .scrollto", function(e) {
+    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
       e.preventDefault();
       var target = $(this.hash);
       if (target.length) {
 
         var scrollto = target.offset().top;
 
-        if ($('#header').length) {
-          scrollto -= $('#header').outerHeight() - 2
+        if ($("#header").length) {
+          scrollto -= $("#header").outerHeight() - 2
 
         }
 
@@ -25,19 +25,19 @@
           scrollto = 0;
         }
 
-        $('html, body').animate({
+        $("html, body").animate({
           scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        }, 1500, "easeInOutExpo");
 
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
+        if ($(this).parents(".nav-menu, .mobile-nav").length) {
+          $(".nav-menu .active, .mobile-nav .active").removeClass("active");
+          $(this).closest("li").addClass("active");
         }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
+        if ($("body").hasClass("mobile-nav-active")) {
+          $("body").removeClass("mobile-nav-active");
+          $(".mobile-nav-toggle i").toggleClass("icofont-navigation-menu icofont-close");
+          $(".mobile-nav-overly").fadeOut();
         }
         return false;
       }
@@ -45,11 +45,11 @@
   });
 
   // Mobile Navigation
-  if ($('.nav-menu').length) {
-    var $mobile_nav = $('.nav-menu').clone().prop({
-      class: 'mobile-nav d-lg-none'
+  if ($(".nav-menu").length) {
+    var $mobile_nav = $(".nav-menu").clone().prop({
+      class: "mobile-nav d-lg-none"
     });
-    $('body').append($mobile_nav);
+    $("body").append($mobile_nav);
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
