@@ -47,15 +47,15 @@ $(function () {
                        $cover +=$row['cover'];
                     }
                                     ?>
-                        <?php echo $bedah; ?>,
-                        <?php echo $n95; ?>,
-                        <?php echo $faceshield; ?>,
-                        <?php echo $goggle; ?>,
-                        <?php echo $sarungtangan; ?>,
-                        <?php echo $hazmat; ?>,
-                        <?php echo $boot; ?>,
-                        <?php echo $caps; ?>,
-                        <?php echo $cover; ?>
+                        <?= $bedah ?>,
+                        <?= $n95 ?>,
+                        <?= $faceshield ?>,
+                        <?= $goggle ?>,
+                        <?= $sarungtangan ?>,
+                        <?= $hazmat ?>,
+                        <?= $boot ?>,
+                        <?= $caps ?>,
+                        <?= $cover ?>
                         ],
         backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de', '#00ff00', '#ff4500'],
       }
