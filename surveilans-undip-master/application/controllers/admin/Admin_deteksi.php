@@ -86,7 +86,8 @@ class Admin_deteksi extends CI_Controller {
 		  ob_end_clean();
             header('Content-Type: application/vnd.ms-excel');
 	        header('Content-Disposition: attachment;filename="Data_Hasil_Deteksi_dan_Penilaian_Resiko.xlsx"');
-	        header('Cache-Control: max-age=0');
+            header('Cache-Control: max-age=0');
+            exit();
 
 	  $writer->save('php://output');
      }

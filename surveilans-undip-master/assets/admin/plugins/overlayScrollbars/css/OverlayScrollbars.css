@@ -15,7 +15,7 @@
 OVERLAY SCROLLBARS CORE:
 */
 
-html.os-html,
+html.os-html ,
 html.os-html > .os-host {
     display: block;
     overflow: hidden;
