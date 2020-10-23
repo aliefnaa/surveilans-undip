@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   font-size: 24px;
   transition: all 0.4s;
-  outline: none !important;
+  outline: none;
   line-height: 1;
   cursor: pointer;
   text-align: right;
@@ -890,7 +890,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #009cea !important;
+  background-color: #009cea;
 }
 
 @media (max-width: 767px) {
