@@ -37,10 +37,10 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">Data Pemohon</h3>
-              <a href="<?php echo site_url('admin/admin_apd/export2/') ?>" class="btn btn-sm btn-tool">Download Excel Data Ketersediaan APD
+              <a href="<?= site_url('admin/admin_apd/export2/') ?>" class="btn btn-sm btn-tool">Download Excel Data Ketersediaan APD
                   <i class="fas fa-download"></i>
               </a>
-              <a href="<?php echo site_url('admin/admin_apd/export/') ?>" class="btn btn-sm btn-tool">Download Excel Data Permohonan APD
+              <a href="<?= site_url('admin/admin_apd/export/') ?>" class="btn btn-sm btn-tool">Download Excel Data Permohonan APD
                   <i class="fas fa-download"></i>
               </a>
             </div>
@@ -122,7 +122,7 @@
                         foreach ($apd as $key => $apd) {?>
                     <tr>
                         <td class="text-center">
-                        <?php echo $no += 1; ?>
+                        <?= $no += 1; ?>
                         </td>
                         <td>
                             <a>
@@ -153,7 +153,7 @@
                         <?php echo $apd->koordinasi ?>
                         </td>
                         <td>
-                        <?php echo $apd->pelatihan ?>
+                        <?= $apd->pelatihan ?>
                         </td>
                         <td>
                         <?php echo $apd->kasus ?>

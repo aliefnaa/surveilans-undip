@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Struktur dari tabel `admin`
 --
 
-CREATE TABLE `admin` (
+CREATE TABLE admin (
   `id_user` int(2) NOT NULL,
   `username` varchar(25) NOT NULL,
   `password` varchar(255) NOT NULL
@@ -38,7 +38,7 @@ CREATE TABLE `admin` (
 -- Dumping data untuk tabel `admin`
 --
 
-INSERT INTO `admin` (`id_user`, `username`, `password`) VALUES
+INSERT INTO admin (id_user, username, password) VALUES
 (1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');
 
 -- --------------------------------------------------------
@@ -47,51 +47,51 @@ INSERT INTO `admin` (`id_user`, `username`, `password`) VALUES
 -- Struktur dari tabel `apd`
 --
 
-CREATE TABLE `apd` (
-  `id_instansi` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `jenis` varchar(255) NOT NULL,
-  `alamat` varchar(255) NOT NULL,
-  `kontak` varchar(255) NOT NULL,
-  `daerah` varchar(255) NOT NULL,
-  `psbb` varchar(10) NOT NULL,
-  `koordinasi` varchar(10) NOT NULL,
-  `pelatihan` varchar(10) NOT NULL,
-  `kasus` varchar(10) NOT NULL,
-  `rapid` varchar(10) NOT NULL,
-  `swab` varchar(10) NOT NULL,
-  `isolasi` varchar(10) NOT NULL,
-  `kondisi` varchar(255) NOT NULL,
-  `sanitizer` varchar(10) NOT NULL,
-  `thermo` varchar(10) NOT NULL,
-  `asal` varchar(255) NOT NULL,
-  `bantuan` varchar(10) NOT NULL,
-  `kebutuhan` varchar(255) NOT NULL,
-  `dokter` int(11) DEFAULT 0,
-  `laboran` int(11) DEFAULT 0,
-  `perawat` int(11) DEFAULT 0,
-  `driver` int(11) DEFAULT 0,
-  `cs` int(11) DEFAULT 0,
-  `bedah` int(11) DEFAULT 0,
-  `n95` int(11) DEFAULT 0,
-  `faceshield` int(11) DEFAULT 0,
-  `goggle` int(11) DEFAULT 0,
-  `sarungtangan` int(11) DEFAULT 0,
-  `hazmat` int(11) DEFAULT 0,
-  `caps` int(11) DEFAULT 0,
-  `cover` int(11) DEFAULT 0,
-  `date` date NOT NULL DEFAULT current_timestamp(),
-  `dekon` int(11) NOT NULL DEFAULT 0,
-  `headbox` int(11) NOT NULL DEFAULT 0,
-  `security` int(11) NOT NULL DEFAULT 0,
-  `bilik_swab` int(11) NOT NULL DEFAULT 0
+CREATE TABLE apd (
+  id_instansi int(11) NOT NULL,
+  nama varchar(255) NOT NULL,
+  jenis varchar(255) NOT NULL,
+  alamat varchar(255) NOT NULL,
+  kontak varchar(255) NOT NULL,
+  daerah varchar(255) NOT NULL,
+  psbb varchar(10) NOT NULL,
+  koordinasi varchar(10) NOT NULL,
+  pelatihan varchar(10) NOT NULL,
+  kasus varchar(10) NOT NULL,
+  rapid varchar(10) NOT NULL,
+  swab varchar(10) NOT NULL,
+  isolasi varchar(10) NOT NULL,
+  kondisi varchar(255) NOT NULL,
+  sanitizer varchar(10) NOT NULL,
+  thermo varchar(10) NOT NULL,
+  asal varchar(255) NOT NULL,
+  bantuan varchar(10) NOT NULL,
+  kebutuhan varchar(255) NOT NULL,
+  dokter int(11) DEFAULT 0,
+  laboran int(11) DEFAULT 0,
+  perawat int(11) DEFAULT 0,
+  driver int(11) DEFAULT 0,
+  cs int(11) DEFAULT 0,
+  bedah int(11) DEFAULT 0,
+  n95 int(11) DEFAULT 0,
+  faceshield int(11) DEFAULT 0,
+  goggle int(11) DEFAULT 0,
+  sarungtangan int(11) DEFAULT 0,
+  hazmat int(11) DEFAULT 0,
+  caps int(11) DEFAULT 0,
+  cover int(11) DEFAULT 0,
+  date date NOT NULL DEFAULT current_timestamp(),
+  dekon int(11) NOT NULL DEFAULT 0,
+  headbox int(11) NOT NULL DEFAULT 0,
+  security int(11) NOT NULL DEFAULT 0,
+  bilik_swab int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `apd`
 --
 
-INSERT INTO `apd` (`id_instansi`, `nama`, `jenis`, `alamat`, `kontak`, `daerah`, `psbb`, `koordinasi`, `pelatihan`, `kasus`, `rapid`, `swab`, `isolasi`, `kondisi`, `sanitizer`, `thermo`, `asal`, `bantuan`, `kebutuhan`, `dokter`, `laboran`, `perawat`, `driver`, `cs`, `bedah`, `n95`, `faceshield`, `goggle`, `sarungtangan`, `hazmat`, `caps`, `cover`, `date`, `dekon`, `headbox`, `security`, `bilik_swab`) VALUES
+INSERT INTO apd (id_instansi, nama, jenis, alamat, kontak, daerah, psbb, koordinasi, pelatihan, kasus, rapid, swab, isolasi, kondisi, sanitizer, thermo, asal, bantuan, kebutuhan, dokter, laboran, perawat, driver, cs, bedah, n95, faceshield, goggle, sarungtangan, hazmat, caps, cover, date, dekon, headbox, security, bilik_swab) VALUES
 (4, 'Tangguh Tri Prasetyo', 'Faskes Tingkat 3', 'dwa', 'tangguh.astank@gmail.com', 'semarang', 'Tidak', 'Belum', 'Belum', 'Belum', 'Tidak', 'Tidak', 'Tidak', 'lumayan', 'Cukup', 'Tidak', 'Instansi / Mandiri', 'Belum', 'dwa', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2020-05-21', 0, 0, 0, 0),
 (5, 'tes insttansi', 'Faskes Tingkat 3', 'ronggolawe', 'tangguhtp@student.ce.undip.ac.id', 'semarang', 'Tidak', 'Sudah', 'Tidak Tahu', 'Belum', 'Tidak', 'Ya', 'Tidak', 'lumayan', 'Kurang', 'Ya', 'Hibah Swasta', 'Pernah', 'dwa', 0, 0, 0, 0, 6, 5, 8, 5, 7, 9, 11, 0, 0, '2020-05-21', 0, 0, 0, 0),
 (6, 'tangguh', 'Faskes Tingkat 2', 'ronggolawe', 'tangguhtp@student.ce.undip.ac.id', 'semarang', 'Tidak', 'Sudah', 'Sudah', 'Belum', 'Ya', 'Ya', 'Ya', 'lumayan', 'Cukup', 'Ya', 'Hibah Pemerintah', 'Belum', 'nganu', 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2020-05-21', 0, 0, 0, 0);
@@ -102,7 +102,7 @@ INSERT INTO `apd` (`id_instansi`, `nama`, `jenis`, `alamat`, `kontak`, `daerah`,
 -- Struktur dari tabel `deteksi`
 --
 
-CREATE TABLE `deteksi` (
+CREATE TABLE deteksi (
   `id_deteksi` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `gender` varchar(30) NOT NULL,
@@ -123,7 +123,7 @@ CREATE TABLE `deteksi` (
 -- Dumping data untuk tabel `deteksi`
 --
 
-INSERT INTO `deteksi` (`id_deteksi`, `nama`, `gender`, `ttl`, `email`, `hp`, `kerabat`, `tinggal`, `alamat`, `asal`, `pendidikan`, `pekerjaan`, `skor`, `date`) VALUES
+INSERT INTO deteksi (id_deteksi, nama, gender, ttl, email, hp, kerabat, tinggal, alamat, asal, pendidikan, pekerjaan, skor, date) VALUES
 (1, '', 'laki', 'dwad', 'tangguhtp@student.ce.undip.ac.id', 23243243, 2147483647, 'Kontrakan', 'ronggolawe', 'Dari Masjid', 'SMA', 'Dokter', 10, '2020-05-20'),
 (2, '', 'laki', 'dwad', 'tangguhtp@student.ce.undip.ac.id', 23243243, 2147483647, 'Kontrakan', 'ronggolawe', 'Dari Masjid', 'SMA', 'Dokter', 9, '2020-05-20'),
 (3, '', 'laki', 'dwad', 'tangguhtp@student.ce.undip.ac.id', 23243243, 2147483647, 'Kontrakan', 'ronggolawe', 'Dari Masjid', 'SMA', 'Dokter', 9, '2020-05-20'),
@@ -148,7 +148,7 @@ INSERT INTO `deteksi` (`id_deteksi`, `nama`, `gender`, `ttl`, `email`, `hp`, `ke
 -- Struktur dari tabel `kecemasan`
 --
 
-CREATE TABLE `kecemasan` (
+CREATE TABLE kecemasan (
   `id_kecemasan` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -168,7 +168,7 @@ CREATE TABLE `kecemasan` (
 -- Dumping data untuk tabel `kecemasan`
 --
 
-INSERT INTO `kecemasan` (`id_kecemasan`, `nama`, `email`, `ttl`, `hp`, `posisi`, `wilayah`, `pekerjaan`, `tempat_kerja`, `wfh`, `kesulitan`, `skor`, `date`) VALUES
+INSERT INTO kecemasan (id_kecemasan, nama, email, ttl, hp, posisi, wilayah, pekerjaan, tempat_kerja, wfh, kesulitan, skor, date) VALUES
 (37, 'Tangguh aja', 'tangguhtp@student.ce.undip.ac.id', '2', '082138273695', 'semarang', 'lockdown', 'Dosen', 'Semarang', 'Iya', 'kendala jaringan,sulit berkoordinasi,apaya', 14, '2020-05-21'),
 (38, 'tes insttansi', 'tangguh.astank@gmail.com', '34', '085789746003', 'semarang', 'pkm', 'Mengurus Rumah Tangga', 'Semarang', 'Tidak', 'kendala jaringan,', 38, '2020-05-21'),
 (39, 'roni', 'tangguhtp@student.ce.undip.ac.id', '1998-05-02', '082138273695', 'semarang', 'pkm', 'Mahasiswa', 'Semarang', 'Tidak', 'sulit menentukan,', 28, '2020-05-21'),
@@ -181,25 +181,25 @@ INSERT INTO `kecemasan` (`id_kecemasan`, `nama`, `email`, `ttl`, `hp`, `posisi`,
 --
 -- Indeks untuk tabel `admin`
 --
-ALTER TABLE `admin`
+ALTER TABLE admin
   ADD PRIMARY KEY (`id_user`);
 
 --
 -- Indeks untuk tabel `apd`
 --
-ALTER TABLE `apd`
+ALTER TABLE apd
   ADD PRIMARY KEY (`id_instansi`);
 
 --
 -- Indeks untuk tabel `deteksi`
 --
-ALTER TABLE `deteksi`
+ALTER TABLE deteksi
   ADD PRIMARY KEY (`id_deteksi`);
 
 --
 -- Indeks untuk tabel `kecemasan`
 --
-ALTER TABLE `kecemasan`
+ALTER TABLE kecemasan
   ADD PRIMARY KEY (`id_kecemasan`);
 
 --
@@ -209,25 +209,25 @@ ALTER TABLE `kecemasan`
 --
 -- AUTO_INCREMENT untuk tabel `admin`
 --
-ALTER TABLE `admin`
+ALTER TABLE admin
   MODIFY `id_user` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `apd`
 --
-ALTER TABLE `apd`
+ALTER TABLE apd
   MODIFY `id_instansi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `deteksi`
 --
-ALTER TABLE `deteksi`
+ALTER TABLE deteksi
   MODIFY `id_deteksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT untuk tabel `kecemasan`
 --
-ALTER TABLE `kecemasan`
+ALTER TABLE kecemasan
   MODIFY `id_kecemasan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
